@@ -1,7 +1,7 @@
 plugins:
   container_names_enabled:
-    default: true
-    client: true
+    default: false
+    client: false
   main_container_name:
     default: "socket-only"
     client: "socket-only"
