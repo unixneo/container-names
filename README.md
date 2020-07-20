@@ -4,7 +4,7 @@
 
 ## Current Status
 
-### Live testing on https://community.unix.com/
+### Live testing on https://community.unix.com/ soon
 
 This Discourse plugin adds:
 
@@ -15,7 +15,7 @@ This Discourse plugin adds:
 
 ## TODO
 
-- Test
+- Test with Docker container and yml env vars above
 
 ## Version Info
 
