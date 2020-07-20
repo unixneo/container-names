@@ -1,6 +1,6 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("topic.custom_fields.import_id")
+  @computed("main_container_name", "data_container_name")
   importId(cf) {
     if (Discourse.User.current() == null) {
       return "";
@@ -8,6 +8,7 @@ export default Ember.Component.extend({
       let connames = "";
       let main_container_name = Discourse.SiteSettings.main_container_name;
       let data_container_name = Discourse.SiteSettings.data_container_name;
+
       if (main_container_name.length > 0 && data_container_name.length > 0) {
         connames =
           '<span class="category-name container-id">Containers: ' +

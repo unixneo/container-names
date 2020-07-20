@@ -1,6 +1,6 @@
 # container-names
 
-### version 0.0.3
+### version 0.0.4
 
 ## Current Status
 
@@ -20,4 +20,4 @@ This Discourse plugin adds:
 
 ## Version Info
 
-- v0.0.3: 20 July 2020 begin
+- v0.0.4: 20 July 2020 begin
