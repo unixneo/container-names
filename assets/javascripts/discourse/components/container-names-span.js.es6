@@ -1,6 +1,6 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("main_container_name", "data_container_name")
+  @computed("main_container_name")
   importId(cf) {
     if (Discourse.User.current() == null) {
       return "";

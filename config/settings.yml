@@ -3,10 +3,10 @@ plugins:
     default: false
     client: false
   main_container_name:
-    default: "TBD"
-    client: "TBD"
+    default: ""
+    client: ""
     hidden: true
   data_container_name:
-    default: "TBD"
-    client: "TBD"
+    default: ""
+    client: ""
     hidden: true
