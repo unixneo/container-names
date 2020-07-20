@@ -5,10 +5,11 @@
 # authors: Neo
 # url: https://github.com/unixneo/container-names
 
-# setting below does not work (yet)
 enabled_site_setting :container_names_enabled
 
 register_asset "stylesheets/common/container-names.scss"
+
+# the below can be moved to the javascript init script
 after_initialize do
      if GlobalSetting.main_container_name
       SiteSetting.main_container_name = GlobalSetting.main_container_name
