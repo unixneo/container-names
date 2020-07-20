@@ -19,4 +19,4 @@ This Discourse plugin adds:
 
 ## Version Info
 
-- v0.0.1: 20 July 2020 begin
+- v0.0.2: 20 July 2020 begin
