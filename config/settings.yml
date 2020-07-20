@@ -1,0 +1,10 @@
+plugins:
+  container_names_enabled:
+    default: true
+    client: true
+  main_container_name:
+    default: "socket-only"
+    client: "socket-only"
+  data_container_name:
+    default: "data"
+    client: "data"

@@ -1,0 +1,5 @@
+en:
+  site_settings:
+    container_names_enabled: "Enable container names plugin?"
+    main_container_name: "Set DISCOURSE_MAIN_CONTAINER_NAME in yml file"
+    data_container_name: "Set DISCOURSE_DATA_CONTAINER_NAME in yml file"
