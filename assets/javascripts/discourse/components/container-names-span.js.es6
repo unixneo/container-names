@@ -8,6 +8,8 @@ export default Ember.Component.extend({
       let connames = "";
       let main_container_name = Discourse.SiteSettings.main_container_name;
       let data_container_name = Discourse.SiteSettings.data_container_name;
+      //let main_container_name = Discourse.GlobalSetting.main_container_name;
+      //let data_container_name = Discourse.GlobalSetting.data_container_name;
 
       if (main_container_name.length > 0 && data_container_name.length > 0) {
         connames =
