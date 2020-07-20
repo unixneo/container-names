@@ -15,7 +15,8 @@ This Discourse plugin adds:
 
 ## TODO
 
-- Test with Docker container and yml env vars above (done, working as designed)
+- Fix issue when container info does not reset until plugin is disabled and re-enabled
+- Test with Docker container and yml env vars above (continue testing)
 
 ## Version Info
 
