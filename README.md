@@ -1,10 +1,10 @@
 # container-names
 
-### version 0.0.2
+### version 0.0.3
 
 ## Current Status
 
-### Live testing on https://community.unix.com/ soon
+### Live testing on https://community.unix.com/
 
 This Discourse plugin adds:
 
@@ -15,8 +15,8 @@ This Discourse plugin adds:
 
 ## TODO
 
-- Test with Docker container and yml env vars above
+- Test with Docker container and yml env vars above (done, working as designed)
 
 ## Version Info
 
-- v0.0.2: 20 July 2020 begin
+- v0.0.3: 20 July 2020 begin
