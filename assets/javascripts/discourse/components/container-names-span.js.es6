@@ -1,7 +1,7 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("connames")
-  importId(connames) {
+  @computed("connames", "main_container_name", "data_container_name")
+  importId(connames, main_container_name, data_container_name) {
     if (Discourse.User.current() == null) {
       return "";
     } else {
