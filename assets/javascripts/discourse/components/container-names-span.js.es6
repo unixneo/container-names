@@ -37,8 +37,9 @@ export default Ember.Component.extend({
       return safeReturn;
     }
   },
+
   actions: {
-    refreshCurrentRoute() {
+    refreshRoute: function () {
       this.refresh();
     },
   },
