@@ -38,11 +38,4 @@ export default Ember.Component.extend({
       return safeReturn;
     }
   },
-
-  actions: {
-    // refreshRoute is not working as hoped
-    refreshOnChange: function () {
-      this.refresh();
-    },
-  },
 });
