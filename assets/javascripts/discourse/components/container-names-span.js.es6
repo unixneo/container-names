@@ -1,8 +1,7 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("randNeo")
+  @computed("main_container_name")
   importId(cf) {
-    var randNeo = Math.floor(Math.random() * 10000) + 1;
     if (Discourse.User.current() == null) {
       return "";
     } else {
@@ -36,7 +35,6 @@ export default Ember.Component.extend({
       } catch (err) {
         console.log("err: ", err.message);
       }
-
       return safeReturn;
     }
   },
