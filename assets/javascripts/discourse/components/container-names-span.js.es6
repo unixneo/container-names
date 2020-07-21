@@ -1,6 +1,6 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("connames")
+  @computed("Discourse.SiteSettings.main_container_name")
   importId(cf) {
     if (Discourse.User.current() == null) {
       return "";
@@ -28,7 +28,6 @@ export default Ember.Component.extend({
         connames = "";
       }
 
-      console.log("connames: ", connames);
       let safeReturn = "";
       try {
         safeReturn = Ember.String.htmlSafe(connames);
