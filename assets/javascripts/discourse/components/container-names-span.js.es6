@@ -1,6 +1,6 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("main_container_name")
+  @computed("connames")
   importId(cf) {
     if (Discourse.User.current() == null) {
       return "";
@@ -8,6 +8,7 @@ export default Ember.Component.extend({
       let connames = "";
       let main_container_name = Discourse.SiteSettings.main_container_name;
       let data_container_name = Discourse.SiteSettings.data_container_name;
+
       //let main_container_name = Discourse.GlobalSetting.main_container_name;
       //let data_container_name = Discourse.GlobalSetting.data_container_name;
 
@@ -27,7 +28,15 @@ export default Ember.Component.extend({
         connames = "";
       }
 
-      return Ember.String.htmlSafe(connames);
+      console.log("connames: ", connames);
+      let safeReturn = "";
+      try {
+        safeReturn = Ember.String.htmlSafe(connames);
+      } catch (err) {
+        console.log("err: ", err.message);
+      }
+
+      return safeReturn;
     }
   },
 });

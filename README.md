@@ -1,6 +1,6 @@
 # container-names
 
-### version 0.0.6
+### version 0.0.7
 
 ## Current Status
 
@@ -20,4 +20,5 @@ This Discourse plugin adds:
 
 ## Version Info
 
-- v0.0.6: 20 July 2020 begin
+- v0.0.7: 21 July 2020 live testing on production docker
+- v0.0.6: 20 July 2020 begin plugin
