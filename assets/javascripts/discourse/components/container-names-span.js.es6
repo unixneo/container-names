@@ -1,7 +1,8 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("connames")
+  @computed("randNeo")
   importId(cf) {
+    var randNeo = Math.floor(Math.random() * 10000) + 1;
     if (Discourse.User.current() == null) {
       return "";
     } else {
