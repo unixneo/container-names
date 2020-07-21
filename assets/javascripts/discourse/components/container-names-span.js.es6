@@ -1,28 +1,29 @@
 import computed from "discourse-common/utils/decorators";
 export default Ember.Component.extend({
-  @computed("connames", "main_container_name", "data_container_name")
-  importId(connames, main_container_name, data_container_name) {
+  // @computed is not working as hoped
+  @computed("connames", "container_main", "container_data")
+  importId(connames, container_main, container_data) {
     if (Discourse.User.current() == null) {
       return "";
     } else {
       let connames = "";
-      let main_container_name = Discourse.SiteSettings.main_container_name;
-      let data_container_name = Discourse.SiteSettings.data_container_name;
+      let container_main = Discourse.SiteSettings.container_main;
+      let container_data = Discourse.SiteSettings.container_data;
 
-      //let main_container_name = Discourse.GlobalSetting.main_container_name;
-      //let data_container_name = Discourse.GlobalSetting.data_container_name;
+      //let container_main = Discourse.GlobalSetting.container_main;
+      //let container_data = Discourse.GlobalSetting.container_data;
 
-      if (main_container_name.length > 0 && data_container_name.length > 0) {
+      if (container_main.length > 0 && container_data.length > 0) {
         connames =
           '<span class="category-name container-id">Containers: ' +
-          main_container_name +
+          container_main +
           ", " +
-          data_container_name +
+          container_data +
           "</a></span>";
-      } else if (main_container_name.length > 0) {
+      } else if (container_main.length > 0) {
         connames =
           '<span class="container-names">Container: ' +
-          main_container_name +
+          container_main +
           "</a></span>";
       } else {
         connames = "";
@@ -39,6 +40,7 @@ export default Ember.Component.extend({
   },
 
   actions: {
+    // refreshRoute is not working as hoped
     refreshRoute: function () {
       this.refresh();
     },

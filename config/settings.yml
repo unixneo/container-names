@@ -2,11 +2,11 @@ plugins:
   container_names_enabled:
     default: false
     client: false
-  main_container_name:
+  container_main:
     default: ""
     client: ""
     hidden: true
-  data_container_name:
+  container_data:
     default: ""
     client: ""
     hidden: true
