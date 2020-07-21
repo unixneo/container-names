@@ -41,7 +41,7 @@ export default Ember.Component.extend({
 
   actions: {
     // refreshRoute is not working as hoped
-    refreshRoute: function () {
+    refreshOnChange: function () {
       this.refresh();
     },
   },
