@@ -1,6 +1,6 @@
 # container-names
 
-### version 0.0.77
+### version 0.0.78
 
 ## Current Status
 
@@ -15,10 +15,11 @@ This Discourse plugin adds:
 
 ## TODO
 
-- Fix issue when container info does not reset until plugin is disabled and re-enabled
+- Fix issue when container info does update unless page is reloaded (computed property issue?)
+- Clean up (shorten) env var names
 - Test with Docker container and yml env vars above (continue testing)
 
 ## Version Info
 
-- v0.0.7: 21 July 2020 live testing on production docker
+- v0.0.7: 21 July 2020 live testing on production docker container
 - v0.0.6: 20 July 2020 begin plugin
