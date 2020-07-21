@@ -1,6 +1,6 @@
 # container-names
 
-### version 0.0.81
+### version 0.0.82
 
 ## Current Status
 
