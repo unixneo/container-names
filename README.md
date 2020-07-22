@@ -1,6 +1,6 @@
 # container-names
 
-### version 0.0.84
+### version 0.0.85
 
 ## Current Status
 
@@ -16,7 +16,7 @@ This Discourse plugin adds:
 ## TODO
 
 - Fix issue when container info does update unless page is reloaded (computed property issue?)
-- Test with Docker container and yml env vars above (continue testing)
+- Add / cleanup locale info for added span element.
 
 ## Version Info
 

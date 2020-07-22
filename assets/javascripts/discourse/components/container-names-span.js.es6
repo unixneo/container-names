@@ -15,16 +15,16 @@ export default Ember.Component.extend({
 
       if (container_main.length > 0 && container_data.length > 0) {
         connames =
-          '<span class="category-name container-id">Containers: ' +
+          '<span class="container-names">Containers: ' +
           container_main +
           ", " +
           container_data +
-          "</a></span>";
+          "</span>";
       } else if (container_main.length > 0) {
         connames =
           '<span class="container-names">Container: ' +
           container_main +
-          "</a></span>";
+          "</span>";
       } else {
         connames = "";
       }
