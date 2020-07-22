@@ -1,6 +1,6 @@
 # container-names
 
-### version 0.0.85
+### version 0.0.86
 
 ## Current Status
 
@@ -16,9 +16,10 @@ This Discourse plugin adds:
 ## TODO
 
 - Fix issue when container info does update unless page is reloaded (computed property issue?)
-- Add / cleanup locale info for added span element.
+- Add / cleanup / fix I18N locale info for added `<span>` element.
 
 ## Version Info
 
-- v0.0.8: 21 July 2020 live testing on production docker container, changed env var names
-- v0.0.6: 20 July 2020 begin plugin
+- v0.0.86: 22 July 2020 add comments regarding TODO issues
+- v0.0.80: 21 July 2020 live testing on production docker container, changed env var names
+- v0.0.60: 20 July 2020 begin plugin
