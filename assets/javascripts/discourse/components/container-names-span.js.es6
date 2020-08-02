@@ -9,9 +9,9 @@ export default Ember.Component.extend({
     if (Discourse.User.current() == null) {
       return "";
     } else {
-      let connames = "";
-      let container_main = Discourse.SiteSettings.container_main;
-      let container_data = Discourse.SiteSettings.container_data;
+      var connames = "";
+      var container_main = Discourse.SiteSettings.container_main;
+      var container_data = Discourse.SiteSettings.container_data;
 
       // this is a mess but I cannot get I18 to work as expected
       // from reading the code :(  PR welcome :)
@@ -32,7 +32,7 @@ export default Ember.Component.extend({
         connames = "";
       }
 
-      let safeReturn = "";
+      var safeReturn = "";
       try {
         safeReturn = Ember.String.htmlSafe(connames);
       } catch (err) {

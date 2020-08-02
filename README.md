@@ -1,6 +1,6 @@
 # container-names
 
-### version 0.0.86
+### version 0.0.87
 
 ## Current Status
 
@@ -20,6 +20,7 @@ This Discourse plugin adds:
 
 ## Version Info
 
+- v0.0.87: 02 August 2020 change let to var
 - v0.0.86: 22 July 2020 add comments regarding TODO issues
 - v0.0.80: 21 July 2020 live testing on production docker container, changed env var names
 - v0.0.60: 20 July 2020 begin plugin
