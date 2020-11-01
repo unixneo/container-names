@@ -1,12 +1,12 @@
 # name: container-names
 # about: plugin to add container names or ids from yml to backup page
-# version: 0.0.88
+# version: 0.0.8.9
 # date: 1 Nov 2020
 # authors: Neo
 # url: https://github.com/unixneo/container-names
 
 
-gem 'gon', ' 6.2.0', {require: false }
+gem 'gon', {require: false }
 
 enabled_site_setting :container_names_enabled
 
