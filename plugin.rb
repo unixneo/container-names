@@ -14,6 +14,7 @@ gem 'gon', '6.2.0'
 # computed property to work?
 after_initialize do
      if GlobalSetting.container_main.to_s.length > 1
+      Gon.global.container_main = GlobalSetting.container_main.dup
       SiteSetting.container_main = GlobalSetting.container_main.dup
      else
       SiteSetting.container_main = 'enabled but unspecified'
