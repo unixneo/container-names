@@ -6,7 +6,7 @@
 # url: https://github.com/unixneo/container-names
 
 
-gem 'gon'
+gem 'gon', '6.1.0'
 
 enabled_site_setting :container_names_enabled
 
