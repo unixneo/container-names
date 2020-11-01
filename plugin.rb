@@ -1,6 +1,6 @@
 # name: container-names
 # about: plugin to add container names or ids from yml to backup page
-# version: 0.0.9.1
+# version: 0.0.9.2
 # date: 1 Nov 2020
 # authors: Neo
 # url: https://github.com/unixneo/container-names
@@ -9,6 +9,7 @@ enabled_site_setting :container_names_enabled
 
 register_asset "stylesheets/common/container-names.scss"
 
+gem 'gon', '6.2.0'
 # the below might be moved to the javascript init script to get 
 # computed property to work?
 after_initialize do
