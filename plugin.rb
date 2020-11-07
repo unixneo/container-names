@@ -9,12 +9,10 @@ enabled_site_setting :container_names_enabled
 
 register_asset "stylesheets/common/container-names.scss"
 
-gem 'gon', '6.2.0'
 # the below might be moved to the javascript init script to get 
 # computed property to work?
 after_initialize do
      if GlobalSetting.container_main.to_s.length > 1
-      Gon.global.container_main = GlobalSetting.container_main.dup
       SiteSetting.container_main = GlobalSetting.container_main.dup
      else
       SiteSetting.container_main = 'enabled but unspecified'
