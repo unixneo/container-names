@@ -19,11 +19,14 @@ after_initialize do
       Gon.global.container_main = GlobalSetting.container_main.dup
       SiteSetting.container_main = GlobalSetting.container_main.dup
      else
+      Gon.global.container_main = 'enabled but unspecified'
       SiteSetting.container_main = 'enabled but unspecified'
      end
      if GlobalSetting.container_data.to_s.length > 1
+      Gon.global.container_data = GlobalSetting.container_data.dup
       SiteSetting.container_data = GlobalSetting.container_data.dup
      else
+      Gon.global.container_data  = 'enabled but unspecified'
       SiteSetting.container_data = 'enabled but unspecified'
      end
 end
