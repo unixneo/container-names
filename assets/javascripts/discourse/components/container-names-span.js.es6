@@ -10,8 +10,8 @@ export default Ember.Component.extend({
       return "";
     } else {
       var connames = "";
-      var container_main = Discourse.SiteSettings.container_main;
-      var container_data = Discourse.SiteSettings.container_data;
+      var container_main = gon.global.container_main;
+      var container_data = gon.global.container_data;
 
       // this is a mess but I cannot get I18 to work as expected
       // from reading the code :(  PR welcome :)
