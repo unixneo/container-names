@@ -1,10 +1,16 @@
 # container-names
 
-### version 0.0.87
+### version 0.0.87. (superceded)
 
 ## Current Status
 
-### Live testing on https://community.unix.com/
+### SUPERCEDED BY
+
+https://github.com/unixneo/discourse-container-names-with-gon
+
+This plugin remains public but has been replaced by the plugin in the repo above.
+
+### SUMMARY
 
 This Discourse plugin adds:
 
